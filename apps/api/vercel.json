@@ -1,5 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "express",
   "installCommand": "cd ../.. && npm install",
-  "buildCommand": "cd ../.. && npm run build --workspace @jibs/shared"
+  "buildCommand": "cd ../.. && npm run build --workspace @jibs/shared",
+  "outputDirectory": null
 }
