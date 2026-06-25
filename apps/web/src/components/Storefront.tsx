@@ -353,7 +353,7 @@ export default function Storefront() {
       </header>
 
       <section className="hero" id="top">
-        <Image src="/images/jibs-cat-hero.png" alt="Cat supplies arranged for delivery at Jibs" fill priority sizes="100vw" />
+        <Image src="/images/jibs-cat-hero-orange.png" alt="Orange cat with supplies arranged for delivery at Jibs" fill priority sizes="100vw" />
         <div className="hero-overlay">
           <p>Built only for cats</p>
           <h1>Jibs Petcare Supplies & Delivery</h1>
