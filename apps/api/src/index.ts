@@ -20,6 +20,10 @@ app.use((err: Error, _req: express.Request, res: express.Response, _next: expres
   res.status(400).json({ message: err.message });
 });
 
-app.listen(port, () => {
-  console.log(`Jibs API running at http://localhost:${port}`);
-});
+export default app;
+
+if (!process.env.VERCEL) {
+  app.listen(port, () => {
+    console.log(`Jibs API running at http://localhost:${port}`);
+  });
+}
