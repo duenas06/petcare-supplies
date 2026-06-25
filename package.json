@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "description": "Cat-focused ecommerce storefront with Next.js, Redux, Express, and reusable CRUD services.",
+  "packageManager": "npm@11.13.0",
   "workspaces": [
     "packages/*",
     "apps/*"

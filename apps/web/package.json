@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm --prefix ../.. run build --workspace @jibs/shared && next build",
     "start": "next start",
     "typecheck": "tsc --noEmit"
   },
@@ -13,7 +13,7 @@
     "@jibs/shared": "0.1.0",
     "@reduxjs/toolkit": "^2.8.2",
     "lucide-react": "^0.468.0",
-    "next": "^15.3.4",
+    "next": "^9.3.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-redux": "^9.2.0"
