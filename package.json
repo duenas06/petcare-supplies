@@ -1,0 +1,21 @@
+{
+  "name": "jibs-petcare-supplies-delivery",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Cat-focused ecommerce storefront with Next.js, Redux, Express, and reusable CRUD services.",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run build --workspace @jibs/shared && concurrently \"npm run dev --workspace @jibs/api\" \"npm run dev --workspace @jibs/web\"",
+    "dev:web": "npm run dev --workspace @jibs/web",
+    "dev:api": "npm run dev --workspace @jibs/api",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "typescript": "^5.9.2"
+  }
+}
